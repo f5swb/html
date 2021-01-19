@@ -42,7 +42,7 @@ echo '<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-i
 <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5">
 <meta name="theme-color" content="#ffffff">';
 
-echo "\r\n<title>SVXLINKREFLECTOR</title>";
+echo "\r\n<title>TABLEAU DE BORD SALON REGIONAL</title>";
 echo "<script src=\"tablesort.js\"></script>\n\r";
 
 $current_style = file_get_contents(STYLECSS);
@@ -173,20 +173,13 @@ if (count($logs) >= 0){
 }
 
 if( LEGEND == "EN") {
-    echo '<table><tr><td><center><img src="./tx.gif"></center></td><td>OM talking on this repeater</td></tr>';
-    echo '<tr><td><center><img src="./accden.png"></center></td><td>Wrong credentials! contact sysop</td></tr>';
-    echo '<tr><td><center><img src="./double.png"></center></td><td>Another station is already talking</td></tr>';
-    echo '<tr><td><center><img src="./ear.png"></center></td><td>Last heard station, at last heard sorting</td></tr>';
-    echo '<tr><td><center></center></td><td>Switch sorting with click on Callsign client / TX off head</td></tr></table>';
+    echo '<table><tr><td><center><img src="./tx.gif"></center></td><td>Station actuellement en TX</td></tr>';
+    echo '<tr><td><center><img src="./accden.png"></center></td><td>Informations non conformes! Contactez le sysop</td></tr>';
+    echo '<tr><td><center><img src="./double.png"></center></td><td>Une autre station est en TX</td></tr>';
+    echo '<tr><td><center><img src="./ear.png"></center></td><td>Station entendue</td></tr>';
+    echo '<tr><td><center></center></td><td>Cliquez pour obtenir les informationsd</td></tr></table>';
 echo '<pre>
-9*# -- Talk group status
-90# -- Not implemented yet. Reserved for help.
-91# -- Select previous talk group
-91[TG]# -- Select talk group TG#
-92# -- QSY all active nodes to a talk group assigned by the reflector server
-92[TG]# -- QSY all active nodes to TG#
-93# -- Follow last QSY
-94[TG]# -- Temporarily monitor TG#
+
 <br>
 ';
 
