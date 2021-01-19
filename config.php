@@ -6,14 +6,14 @@ date_default_timezone_set('Europe/Berlin'); // http://php.net/manual/de/timezone
 define("LOGFILETABLE", "SHOW" );
 
 // ammount of line to show
-define("LOGLINECOUNT", "20");
+define("LOGLINECOUNT", "10");
 
 // full path to logfile with read access for http deamon, 'file1', 'file2', 'file3', 'file4' ....
 $LOGFILES = array( '../svxlinkreflector.log', '', '' ); 
 
 // set to SHOWSHORT and the IP (only 10 letters) address is showing in HTML
 // set SHOW and the IP address is showing in HTML
-define("IPLIST", "SHOWNO");
+define("IPLIST", "SHOW");
 
 // set to SHOW for see refreshtime statusline
 define("REFRESHSTATUS", "SHOW");
@@ -31,13 +31,13 @@ $LASTHEARD = "TOP"; // EAR or TOP
 
 /* set to DE Deutsch to EN for English languange
 set NO legend not showing */
-define("LEGEND", "DE");
+define("LEGEND", "EN");
 
 // set showing monitoring talkgroup yes(SHOW) or not(SHOWNO)
-define("MON", "SHOW");
+define("MON", "SHOWNO");
 
 // set showing talkgroup yes(SHOW) or not (SHOWNO)
-define("TG", "SHOW");
+define("TG", "SHOWNO");
 
 // set statusinfo from svxreflector server data yes (SHOW) or not (SHOWNO)
 define("SERVERSTATUS", "SHOW");
